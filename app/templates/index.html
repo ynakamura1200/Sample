@@ -1,0 +1,22 @@
+<!doctype html>
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>機械学習で分類</title></head>
+    <body>
+        <h1>機械学習で分類</h1>
+        <div>csvファイルをアップロードしてください。</br>学習中の損失（loss）の推移をグラフ表示します</div>
+        <form method = post enctype = multipart/form-data>
+            <p>
+                <input type=file name=file>
+                <input type=submit value=Upload>
+            </p>
+        </form>
+        </br>
+        <h4> ファイルフォーマットについて。</h4>
+        <h4> 以下のsampleファイルを使用することができます。</h4>
+        <div> 　<a href="/download/iris">sample_iris.csv(百合の分類ファイル)</a></div>
+        <div> 　<a href="/download/wine">sample_wine.csv(ワインの分類ファイル)</a></div>
+        </br>
+    </body>
+    </html>
