@@ -1,5 +1,5 @@
 # coding: utf-8
-from sqlalchemy import Column, Integer, String, Boolean, DateTime, Date
+from sqlalchemy import Column, Integer, String, Boolean, DateTime, Date, DECIMAL
 from assets.database import Base
 from datetime import datetime as dt
 
@@ -10,7 +10,7 @@ class Conditions(Base):
     file_path = Column(String(200), unique=False)
     total_epoch = Column(Integer, unique=False)
     batch_size = Column(Integer, unique=False)
-    eta = Column(Integer, unique=False)
+    eta = Column(DECIMAL(10, 7), unique=False)
     wb_width = Column(Integer, unique=False)
     n_in = Column(Integer, unique=False)
     n_mid = Column(Integer, unique=False)
@@ -36,8 +36,8 @@ class Loss(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     condition_id = Column(Integer, unique=False)
     epoch = Column(Integer, unique=False)
-    train_loss = Column(Integer, unique=False)
-    test_loss = Column(Integer, unique=False)
+    train_loss = Column(DECIMAL(10, 7), unique=False)
+    test_loss = Column(DECIMAL(10, 7), unique=False)
     updated_at = Column(DateTime, default=dt.now())
     created_at = Column(DateTime, default=dt.now())
 
@@ -53,8 +53,8 @@ class Accuracy(Base):
     __tablename__ = "ACCUARACY"
     __table_args__ = {'extend_existing': True}
     condition_id = Column(Integer, primary_key=True)
-    train_accuracy = Column(Integer, unique=False)
-    test_accuracy = Column(Integer, unique=False)
+    train_accuracy = Column(DECIMAL(10, 7), unique=False)
+    test_accuracy = Column(DECIMAL(10, 7), unique=False)
     updated_at = Column(DateTime, default=dt.now())
     created_at = Column(DateTime, default=dt.now())
 
