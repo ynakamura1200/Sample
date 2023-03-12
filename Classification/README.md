@@ -4,13 +4,11 @@ Classificationは、機械学習（分類）に関するアプリです。
 正解ラベルのあるcsvファイルを元に、ディープラーニングを用いて学習を行います。  
 学習中のlossの推移（損失関数）を、DBに保存した後にグラフとして可視化します。  
 
-サンプルデータ（app/sample_files/sample_iris.csv）を用いた場合のグラフは、  
-以下のURLで確認できます。  
-https://ynakamura-app-plot.herokuapp.com/  
-学習の条件は、現在のところ ほぼ固定値です。  
+以下の図は、サンプルデータ（app/sample_files/sample_wine.csv）を用いた場合のグラフの例です。
+この例では、学習係数を変えることによる結果の違いが確認できました。
+![exampleResult](https://user-images.githubusercontent.com/58759616/224544745-247f46ac-da9a-476b-965e-5ed3379b79e4.png)
 
-以下のURLがcsvファイルの入力画面ですが、表示内容、機能は改修中です。  
-https://ynakamura-app.herokuapp.com/  
+csvファイル入力画面の表示内容、機能は改修中です。 
 
 
 # 使用している主な技術  
