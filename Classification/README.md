@@ -6,7 +6,7 @@ Classificationは、機械学習（分類）に関するアプリです。
 
 以下の図は、サンプルデータ（app/sample_files/sample_wine.csv）を用いた場合のグラフの例です。
 この例では、学習係数を変えることによる結果の違いが確認できました。
-![exampleResult](https://user-images.githubusercontent.com/58759616/224544745-247f46ac-da9a-476b-965e-5ed3379b79e4.png)
+<img src="https://user-images.githubusercontent.com/58759616/224544745-247f46ac-da9a-476b-965e-5ed3379b79e4.png" width="850px">
 
 csvファイル入力画面の表示内容、機能は改修中です。 
 
